@@ -1,1 +1,176 @@
 /* your code here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manufacturing+Consent&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+body {
+	background-color: #10e37f;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.product {
+	height: 80vh;
+	background-color: white;
+	width: 70vw;
+	position: relative;
+	/* border: 1px solid blue; */
+}
+
+.product__photo {
+	/* border: 1px solid red; */
+	border-radius: 6px;
+	width: 45%;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	position: absolute;
+	left: -30px;
+	top: 30px;
+}
+
+.photo-container {
+	/* position: absolute; */
+}
+
+.controls {
+	/* border: 1px solid cyan; */
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	padding: 8px;
+}
+
+.photo-main {
+	/* border: 1px solid cyan; */
+	background: linear-gradient(90deg,rgba(175, 231, 50, 1) 0%, rgba(190, 236, 81, 1) 50%, rgba(180, 233, 61, 1) 100%);
+	height: 55vh;
+}
+
+.photo-main > img {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: -40px;
+}
+
+.photo-album {
+	padding: 0.5rem;
+	background-color: white;
+}
+
+.photo-album > ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.photo-album > ul > li {
+	/* background-color: white; */
+	list-style-type: none;
+	/* border: 1px solid cyan; */
+	padding: 2px;
+}
+
+.photo-album > ul > li > img {
+	/* background-color: white; */
+	height: 35px;
+	width: 35px;
+	border: 1px solid black;	
+}
+
+.product__info {
+	/* border: 1px solid red; */
+	width: 50%;
+	position: relative;
+	left: 180px;
+	top: 50px;
+}
+
+.title {
+	font-family: "Manufacturing Consent", sans-serif;
+	font-weight: 100;
+}
+
+.title > span {
+	font-size: 10px;
+}
+
+.price {
+	color :red;
+	padding: 1rem;
+}
+
+.price > span {
+	font-size: 2.5rem;
+}
+
+.variant, .description, .submit-btn > button {
+	font-family: "Inter", sans-serif;
+}
+
+.variant > h3, .description > h3 {
+	font-size: 0.5rem;
+	color: gray;
+	letter-spacing: 0.05rem;
+}
+
+.variant > ul {
+	display: flex;
+	/* border: 1px solid green; */
+	margin-left: 30px;
+	margin-top: 10px;
+	padding: 5px;
+	gap: 5px;
+}
+
+.variant > ul > li {
+	list-style-type: none;
+}
+
+.variant > ul > li:first-child > img {
+	border: 1px solid black;
+}
+
+.variant > ul > li > img {
+	width: 25px;
+	height: 25px;
+}
+
+.description > h3  {
+	margin-top: 5px;
+	text-transform: uppercase;
+}
+
+.description > ul {
+	padding: 10px 55px;
+	font-size: 0.8rem;
+}
+
+.submit-btn {
+	/* border: 1px solid black; */
+	margin-top: 5px;
+}
+
+.submit-btn > button {
+	border: 0;
+	padding: 10px;
+	text-transform: uppercase;
+	background-color: red;
+	color: white;
+	border-radius: 6px;
+	font-size: 0.55rem;
+	width: 18vw;
+	font-weight: 700;
+	letter-spacing: 1px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	cursor: pointer;
+}
+
+
+
+
